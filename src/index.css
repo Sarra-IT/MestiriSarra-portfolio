@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Black background with #d5dee6 cards */
+    --background: 0 0% 0%; /* black */
+    --foreground: 210 20% 87%; /* #d5dee6 */
+
+    --card: 210 20% 87%; /* #d5dee6 */
+    --card-foreground: 0 0% 0%; /* black text on card */
+
+    --popover: 210 20% 87%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 210 20% 87%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 210 15% 77%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 210 10% 67%;
+    --muted-foreground: 0 0% 0%;
+
+    --accent: 210 25% 97%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 82%;
+    --input: 210 20% 87%;
+    --ring: 210 20% 77%;
+
+    --radius: 1rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(210 20% 92%) 0%, hsl(210 20% 87%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(210 20% 92%) 0%, hsl(210 20% 87%) 100%);
+    
+    --shadow-elegant: 0 4px 20px -4px rgba(213, 222, 230, 0.15);
+    --shadow-hover: 0 8px 30px -6px rgba(213, 222, 230, 0.25);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode: also black background with #d5dee6 cards */
+    --background: 0 0% 0%;
+    --foreground: 210 20% 87%;
+
+    --card: 210 20% 87%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 210 20% 87%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 210 20% 87%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 210 15% 77%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 210 10% 67%;
+    --muted-foreground: 0 0% 0%;
+
+    --accent: 210 25% 97%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 82%;
+    --input: 210 20% 87%;
+    --ring: 210 20% 77%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
