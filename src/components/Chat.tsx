@@ -84,7 +84,7 @@ const Chat: React.FC = () => {
     try {
       const genAI = new GoogleGenerativeAI(apiKey)
       const candidateModels = [
-        'gemini-2.0-flash',
+        'gemini-2.5-flash',
       ]
 
       let responseText = ''

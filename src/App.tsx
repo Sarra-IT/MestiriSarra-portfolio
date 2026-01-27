@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ChatProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/MestiriSarra-portfolio">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ExternalLink, Code2, Palette, Database, Cloud, GitBranch, Smartphone, Terminal, Sparkles, Briefcase, GraduationCap, FileDown } from "lucide-react";
+import { Code,Coffee,Github, Linkedin, Mail, ExternalLink, Code2, Palette, Database, Cloud, GitBranch, Smartphone, Terminal, Sparkles, Briefcase, GraduationCap, FileDown } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -18,33 +18,33 @@ import Chat from "@/components/Chat";
 const Index = () => {
   const projects = [
     {
-      title: "Project Sakura",
-      description: "A full-stack web application built with React and Node.js",
-      tags: ["React", "Node.js", "MongoDB"],
+      title: "Jeu vidéo de type plateforme",
+      description: "Développement d’un jeu en 2D avec Pygame, mettant en œuvre des concepts de physique et d’animation.",
+      tags: ["Python", "Pygame"],
       size: "large"
     },
     {
-      title: "UI Component Library",
-      description: "Reusable component library with TypeScript",
-      tags: ["TypeScript", "React", "Storybook"],
+      title: "Logiciel de gestion de ventes informatiques",
+      description: "Application de bureau développée en Java pour gérer les ventes, produits et clients d’un service informatique.",
+      tags: ["Java"],
       size: "medium"
     },
     {
-      title: "API Dashboard",
-      description: "Analytics dashboard for monitoring APIs",
-      tags: ["Vue.js", "D3.js"],
+      title: "Site web E-commerce",
+      description: "Création d’un site de vente en ligne responsive, avec intégration du front-end et du back-end.",
+      tags: ["HTML", "CSS", "JavaScript", "PHP"],
       size: "medium"
     },
     {
-      title: "Mobile App",
-      description: "Cross-platform mobile application",
-      tags: ["React Native", "Firebase"],
+      title: "Application de gestion de location de films et séries",
+      description: "Développement d’un programme complet en C pour gérer la location et le suivi des films et séries.",
+      tags: ["C"],
       size: "small"
     },
     {
-      title: "DevTools Extension",
-      description: "Browser extension for developers",
-      tags: ["JavaScript", "Chrome API"],
+      title: "Réseau virtuel sécurisé",
+      description: "Conception et configuration d’un réseau virtuel sécurisé à l’aide des outils Cisco.",
+      tags: ["Cisco", "Networking"],
       size: "small"
     }
   ];
@@ -53,11 +53,11 @@ const Index = () => {
 
 const experiences = [
   {
-    role: "Projets du cycle ingénieur",
-    company: "École Supérieure d'Électronique de l’Ouest (ESEO)",
-    period: "2025 - 2026",
+    role: "Employée polyvalente Restauration",
+    company: "Calorie Boumiza Square",
+    period: "2023 - 2024",
     description:
-      "Réalisation de projets académiques tels qu’une gâche électrique automatique et un radar de recul pour véhicule utilisant la technologie à ultrasons. Familiarisation avec les systèmes Linux et la programmation embarquée."
+      "-Accueillir et conseiller les clients\n-Gérer son temps et prioriser les tâches\n-Gérer les stocks et assurer leur réapprovisionnement\n-Être responsable de la caisse"
   },
   {
     role: "Fondatrice et gestionnaire",
@@ -67,19 +67,13 @@ const experiences = [
       "Création et gestion d’une friperie en ligne. Promotion sur les réseaux sociaux, gestion des stocks et planification financière."
   },
   {
-    role: "Professeure particulière",
+    role: "Cours particuliers",
     company: "Indépendante",
-    period: "2023",
+    period: "2022-2024",
     description:
-      "Dispense de cours particuliers adaptés au niveau et au rythme de chaque élève, en privilégiant une approche personnalisée."
+      "Adapter les méthodes pédagogiques au niveau de chaque élève"
   },
-  {
-    role: "Employée polyvalente",
-    company: "Secteur de la restauration",
-    period: "2022 - 2023",
-    description:
-      "Accueil et conseil des clients, gestion de la caisse, suivi des stocks et organisation efficace des tâches."
-  }
+ 
 ];
 
 const education = [
@@ -224,9 +218,9 @@ const education = [
                   <div key={index} className="pb-4 border-b border-border last:border-0">
                     <div className="space-y-2">
                       <h3 className="text-lg font-semibold text-black">{exp.role}</h3>
-                      <p className="text-sm text-primary font-medium">{exp.company}</p>
+                      <p className="text-sm text-black font-medium">{exp.company}</p>
                       <p className="text-xs text-muted-foreground">{exp.period}</p>
-                      <p className="text-sm text-muted-foreground">{exp.description}</p>
+                      <p className="text-sm text-muted-foreground whitespace-pre-line">{exp.description}</p>
                     </div>
                   </div>
                 ))}
@@ -237,7 +231,7 @@ const education = [
                   <div key={index} className="pb-4 border-b border-border last:border-0">
                     <div className="space-y-2">
                       <h3 className="text-lg font-semibold text-black">{edu.degree}</h3>
-                      <p className="text-sm text-primary font-medium">{edu.school}</p>
+                      <p className="text-sm text-black font-medium">{edu.school}</p>
                       <p className="text-xs text-muted-foreground">{edu.period}</p>
                       <p className="text-sm text-muted-foreground">{edu.description}</p>
                     </div>
@@ -248,38 +242,40 @@ const education = [
           </Card>
           <Card className="lg:col-span-7 lg:row-span-1 p-8 border-border bg-card shadow-elegant flex flex-col space-y-6">
             <h2 className="text-2xl font-bold text-black mb-4">Skills</h2>
-            <div className="space-y-6">
+             <div className="space-y-6">
               <div className="grid grid-cols-4 gap-4">
                 <div className="flex flex-col items-center">
                   <Code2 className="w-8 h-8 text-gray-700 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2 text-gray-700">React</span>
+                  <span className="text-sm mt-2 text-black">C</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <FileCode2 className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Next.js</span>
+                  <Code className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Html/Css/Js</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <FileJson className="w-8 h-8 text-[#3178C6] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">TypeScript</span>
+                  <Coffee className="w-8 h-8 text-[#773cf5] transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Java</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Palette className="w-8 h-8 text-[#06B6D4] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Tailwind</span>
+                  
+                  <span className="text-sm mt-2">React</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-4 gap-4">
                 <div className="flex flex-col items-center">
                   <Server className="w-8 h-8 text-[#339933] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Node.js</span>
+                  <span className="text-sm mt-2">Cisco</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <Wind className="w-8 h-8 transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">Express</span>
+                  <span className="text-sm mt-2">Vhdl</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Database className="w-8 h-8 text-[#47A248] transition-transform transform hover:rotate-12 duration-200" />
-                  <span className="text-sm mt-2">MongoDB</span>
+                
+                <Database className="w-8 h-8 text-[#47A248] transition-transform transform hover:rotate-12 duration-200" />
+                  <span className="text-sm mt-2">Sql</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <GitBranch className="w-8 h-8 text-[#F05032] transition-transform transform hover:rotate-12 duration-200" />
@@ -299,7 +295,7 @@ const education = [
       {/* Footer */}
       <footer className="container mx-auto px-6 py-6 border-t border-border">
         <p className="text-center text-muted-foreground text-sm">
-          © 2025 Sarra Mestiri.
+          © 2026 Sarra Mestiri.
         </p>
       </footer>
     </div>
